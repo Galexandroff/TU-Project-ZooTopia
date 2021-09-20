@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ZooTopia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor, .fa-coffee {
+        font-size: 200px
+    }
+
+
+
+
+
+
+
+
+</style>
+
+<th:block th:include="~{_shared/head}"/>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+           href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Начало</a>
+        <a href="/ticket" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Купи билет</a>
+        <a href="/animals" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Животни</a>
+        <a href="/profile" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Профил</a>
+        <a class="nav-item mr-2">
+            <form th:action="@{/logout}" method="post">
+                <button class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" type="submit">
+                    Изход
+                </button>
+            </form>
+        </a>
+    </div>
+    <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav-right {
+                float: right;
+            }
+
+
+
+
+
+
+
+    </style>
+    </head>
+    <body>
+
+    <div class="topnav">
+
+        <div class="topnav-right">
+            <a href="/login-employee" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Вход
+                за служители</a>
+        </div>
+    </div>
+
+
+    </body>
+</div>
+</div>
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+
+        <div class="w3-twothird">
+        </div>
+        <img src="img/guide1.jpg" alt="Home-start" align="center" width="400" height="400">
+        <h1>Майк Боковски - специалист по Птици и Тревопасни животни</h1>
+        <h5 class="w3-padding-32">
+            Майк е с 17 години опит в изучаването на различни видове птици и тревопасни животни.
+            Неговия богат опит ще превърне вашия престой в незабрваим момент изпълнен с нови познания за най-интересни и
+            различни видове създания.
+
+            Сектор "Тревопасни животни" е най-голям по площ – заема повече от половината територия на парка и в него
+            се отглеждат 30 вида. В Зала “Гиганти“ живеят индийски слон, бял носорог и хипопотами, а в обширните
+            заграждения на сектора може да видите елени, антилопи, бизони, якове, понита, камила, диви свине и др.
+            красиви внушителни по размер видове.
+
+            В сектор Птици живеят 58 вида птици от цял свят. Секторът се състои от Фазанерия, в която може да видите
+            папагали, фазани и дневни и нощни грабливи птици, внушителна Голяма волиера за орли и лешояди, езеро за
+            водоплаващи птици и колекция от нелетящи птици (щраус, нанду, ему)..</p>
+        </h5>
+        <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+            <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+        </div>
+
+        <div class="w3-twothird">
+            <img src="img/guide2.jpg" alt="Home-start" align="center" width="500" height="400">
+            <h1>Радостина Йанкова</h1>
+            <h5 class="w3-padding-32"></h5>
+
+            <p class="w3-text-grey">
+                Радостина е млад професионалист отдадена на професията си. Тя учи за ветеринар, но нейната способност да
+                придържа вниманието на аудиторията я превръща в любимка на всички посетители. Тя има богат опит в
+                сферата на Хищниците, Приматите и още много други сфери.
+                В сектор "Хищници" има голяма и разнообразна колекция от 29 едри и дребни хищници. В Зала „Големи котки,
+                терариум
+                и аквариум“ може да видите колекцията от големи котки (тигри, лъвове, ягуари, леопард и пума) във
+                вътрешни и обширни външни заграждения. В секция „Дребни хищници“ живеят лисици, мангусти, сервали,
+                еноти, носати мечета, скунксове, язовци и др.. Сградата на “Мечкарника“ е обитавана от кафяви мечки,
+                барибали, бърнеста и хималайска мечка и ивичести хиени.
+
+                В сектор „Примати“ се отглеждат 10 атрактивни и интересни вида, които обитават три комплекса. Едни от
+                най-редките и ценни примати в колекцията са белоръките гибони, лъвските макаци, котешките лемури,
+                лапундерите, хануманските лангури и качулатите капуцини. Освен тя ще може да видите два вида мармозетки,
+                които са най-дребните маймунки на света. Сектор Примати бе реконструиран през 2020г. и в момента е
+                най-модерното съоръжение за примати на Балканите.
+
+                Аквариумът и Терариумът на Зоопарка се помещават в Зала „Големи котки, терариум и аквариум“. В Аквариума
+                може да видите 45 вида риби от сладководни басейни от Африка, Южна Америка и Азия. Има и един морски
+                аквариум. В Терариума има впечатляваща колекция от 5 вида земноводни и 33 вида влечуги от цял свят. Част
+                от животните от Вивариума, който се намира в служебната зона на зоопарка, са на експозиция в залата – 10
+                вида дребни гризачи.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar on small screens -->
+
+<!--    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>-->
+<!--        <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>-->
+<!--    </div>-->
+</div>
+
+
+<script>
+
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

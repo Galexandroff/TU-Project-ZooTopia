@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ZooTopia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<th:block th:include="~{_shared/head}"/>
+<th:block th:include="~{_shared/head-bilet}"/>
+<body>
+
+<!-- Navbar -->
+
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+       href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+            class="fa fa-bars"></i></a>
+    <a href="/home" class="w3-bar-item w3-button w3-padding-large w3-white">Начало</a>
+    <a href="/guide" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Екскурзоводи</a>
+    <a href="/animals" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Животни</a>
+    <a class="nav-item mr-2">
+      <form th:action="@{/logout}" method="post">
+        <button class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" type="submit">Изход</button>
+
+      </form>
+    </a>
+    </head>
+  </div>
+</div>
+
+
+<!-- Header -->
+<main>
+  <div class="container">
+    <h1 class="text-center">Изберете група :</h1>
+    <br>
+    <h3 style="text-align: center;"><strong>Ако все още не сте избрали погледнете <a
+            href="http://localhost:8082/guide">ТУК .</a></strong></h3>
+
+    <form class="mx-auto w-100 bg-blur" th:action="@{/guide-reserve}" method="post">
+      <div class="row">
+        <div class="ml-lg-5">
+          <img src="/img/guide1.jpg" class="border border-secondary" alt="guide1 image"
+               height="450"
+               width="400"/>
+        </div>
+        <div class="ml-lg-5">
+          <img src="/img/guide2.jpg" class="border border-secondary" alt="guide2 image"
+               height="450"
+               width="450"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class=".col-sm-3"></div>
+        <div>
+          <div class="col ">
+            <h2 style="text-indent: 150px;">Майк Боковски</h2>
+            <label for="ekskurzovod">
+              <input type="radio" id="ekskurzovod" class="ml-lg-5" value="Боковски" name="ekskurzovod">
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <div class="col ">
+            <h2 style="text-indent: 175px;">Радостина Йанкова</h2>
+            <label for="ekskurzovod">
+              <input type="radio" id="ekskurzovod" class="ml-lg-5" value="Йанкова" name="ekskurzovod">
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-holder d-flex justify-content-center">
+
+        <button class="btn btn-secondary text-white mb-3" type="submit">Резервирай</button>
+      </div>
+    </form>
+  </div>
+
+</main>
+
+
+<!-- Footer -->
+
+<script>
+
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>

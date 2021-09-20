@@ -1,0 +1,45 @@
+<th:block th:include="~{_shared/head-reg}" xmlns:th="http://www.w3.org/1999/xhtml"/>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="login-reg-panel">
+    <div class="login-info-box">
+        <h2>Имате ли акаунт?</h2>
+        <label id="label-register" for="log-reg-show">Вход</label>
+        <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+    </div>
+
+    <div class="register-info-box">
+        <h2>Имате ли акаунт?</h2>
+        <label id="label-login" for="log-login-show">Регистрирай се</label>
+        <input type="radio" name="active-log-panel" id="log-login-show">
+    </div>
+
+    <div class="white-panel">
+        <div class="login-show">
+            <h2>Вход</h2>
+            <form class="mx-auto w-15" th:action="@{/login}" method="post">
+                <input type="text" name="email" placeholder="Имейл">
+                <input type="password" name="password" placeholder="Парола">
+                <input type="submit" value="Вход">
+            </form>
+        </div>
+        <div class="register-show">
+            <h2>Регистрация</h2>
+            <form class="mx-auto w-15" th:action="@{/register}" method="post">
+                <input type="text" id="email" name="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$" placeholder="Имейл">
+                <input type="text" id="username" name="username" placeholder="Потребилско име">
+                <input type="password" id="password" name="password" placeholder="Парола">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Потвърди парола">
+                <input type="text" name="phone" pattern="08[789]\d{7}" placeholder="Телефон">
+
+                <input type="submit" value="Регистрирай се">
+            </form>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="/css/style-register-zoo.css">
+<script src="/js/reg.js"></script>

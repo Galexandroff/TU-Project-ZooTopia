@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ZooTopia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-bar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor, .fa-coffee {
+        font-size: 200px
+    }
+</style>
+
+<th:block th:include="~{_shared/head}"/>
+<body>
+
+<!-- Navbar -->
+
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+           href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i
+                class="fa fa-bars"></i></a>
+        <a href="/" class="w3-bar-item w3-button w3-padding-large w3-white">Начало</a>
+        <a href="/animals-unlogged" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Животни</a>
+        <a href="/register-login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Вход</a>
+        <a href="/register-login" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Регистрация</a>
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+            .topnav-right {
+                float: right;
+            }
+        </style>
+        </head>
+        <body>
+
+        <div class="topnav">
+
+            <div class="topnav-right">
+                <a href="/login-employee" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Вход за служители</a>
+            </div>
+        </div>
+
+
+
+</body>
+    </div>
+</div>
+
+
+<!-- Header -->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Добре дошли в ЗооТопия</h1>
+    <p class="w3-xlarge">Най-атрактивния зоологически парк на Балканите</p>
+    <form action="/map" class="inline">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Виж картата</button>
+    </form>
+
+</header>
+<img src="img/home-start.jpg" alt="Home-start" align="center" width="1500" height="600">
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+
+        <div class="w3-twothird">
+
+            <h1>История</h1>
+            <h5 class="w3-padding-32">Зоологическа градина – ЗооТопия е най-модерната и най-голямата на Балканския
+                полуостров. Основана през 1998 г. от Георги Александров, тя бързо получава популярност и се превръща в
+                място
+                за отдих, развлечение и знание, с прочути в цял свят специалисти и с развъждане на ценни и редки
+                животни. През 2004 г. Зоологическата градина е преместена от сравнително малката площ в центъра на
+                столицата на територията на днешната община “Етрополе”, където е разположена върху площ от 235 декара.
+                През годините „ЗооТопия“ се превръща в предпочитано място за отдих и развлечение
+                сред жителите на страната, тя е посещавана и предизвиква интерес и от чуждестранни туристи.
+                Зоопарк "ЗооТопия" е един от 100-те национални туристически обекта и е отворен 365
+                дни в годината. Зоопаркът е разположен на 15 минути от град Етрополе и е свързан чрез удобни
+                транспортни връзки.</p>
+                <img src="img/home-history.jpg" alt="Home-history" align="left" width="500" height="400">
+            </h5>
+        </div>
+
+        <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        </div>
+    </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+            <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+        </div>
+
+        <div class="w3-twothird">
+            <h1>ПРАВИЛА ЗА ПОСЕТИТЕЛИТЕ НА ЗООЛОГИЧЕСКА ГРАДИНА – ЗооТопия</h1>
+            <h5 class="w3-padding-32"></h5>
+
+            <p class="w3-text-grey">
+
+                Уважаеми посетители,
+                Любезно Ви молим да имате предвид, че на територията на Зоологическа градина ЗооТопия не е позволено:
+
+                Влизането с домашни животни, независимо от вида и размерите им.
+                Строго забранено е храненето на животните – всяко животно в зоопарка има предварително определени
+                хранителна таблица и количество храна, които трябва да получава на ден. Храненето с каквато и да е храна
+                от посетителите е опасно за здравето и живота на животните! Включително и с ябълки, моркови и др.
+                подобни, които много посетители носят в зоопарка. Хвърлянето на храна от посетителите води и до
+                поведенчески промени и разстройства – животните са постоянно изнервени и развиват „просещо“ поведение.
+                Животните в зоопарка получават достатъчно и качествена храна.
+                Преминаването през защитните бариери, прескачането на огради.
+                Снимането с професионални камери и фотоапарати без разрешение.
+                Влизането с всички видове велосипеди, тротинетки, ролери, скейтборд, ховърборд, сегуей, топки, балони
+                както и всякакви предмети и уреди, които биха могли да дразнят и безпокоят животните. Изключение може да
+                бъде направено само при посещение на Зоопарка от деца със специфични потребности, които могат да
+                използват колела или други уреди за облекчаване на придвижването.
+                Влизането на лица в нетрезво състояние.
+                Деца под 12 години влизат с придружител.
+
+                Нарушителите ще бъдат извеждани извън територията на зоопарка от охраната.
+                Гореописаните правилата са отпечатани на гърба на билета за вход в Зоологическа градина – ЗооТопия.
+                Закупуването на този билет означава, че Вие сте прочели и приели правилата на Зоологическа градина
+                ЗооТопия. Правилата са изложени и на входовете на Зоопарка.
+                Пазете билета си докато сте на територията на Зоопарка и при поискване го представете.
+                Посетителите трябва да спазват мерките за безопасност свързани с извънредната епидемиологичната
+                обстановка! С цел избягване на събиране на хора в закрити пространства посетителите Залите „Големи
+                котки, терариум и аквариум“ и Зала „Гиганти“ ще са затворени за посетители до второ нареждане.
+                Призоваваме посетителите да спазват мерките за безопасност – препоръчително е използването на лични
+                предпазни средства (маски, ръкавици, дезинфектанти и др.), спазване на дистанция от поне 2,5 м. между
+                отделните групи посетители, както и да не се струпват множество хора на едно място, да се придвижват
+                само по алеите за посетители. Всеки посетител, който предлага храна на животните, което е абсолютно
+                забранено, ще бъде незабавно извеждан от зоопарка от охраната. Спазването на правилата на зоопарка и
+                посочените мерки във връзка с епидемиологичната обстановка и заплахата от зараза с Covid 19 от страна на
+                посетителите е проява на отговорност към опазването на здравето на животните, посетителите и персонала
+                на Зоологическа градина – ЗооТопия, която е парк със специално предназначение и единствен дом на много
+                птици и животни.</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+
+        <div class="w3-twothird">
+
+            <h1>Билети</h1>
+
+            <div id="Content">
+                <div class="content_wrapper clearfix">
+
+                    <div class="sections_group">
+
+                        <div class="entry-content" itemprop="mainContentOfPage">
+
+                            <div class="section mcb-section mcb-section-f236b1796"
+                                 style="padding-top:0px;padding-bottom:30px;background-color:">
+                                <div class="section_wrapper mcb-section-inner">
+                                    <div class="wrap mcb-wrap mcb-wrap-1ff5e3b94 one  valign-top clearfix" style="">
+                                        <div class="mcb-wrap-inner">
+                                            <div class="column mcb-column mcb-item-fa1692e30 one column_column">
+                                                <div class="column_attr clearfix align_center" style="padding:0 10%;">
+                                                    <div class="image_frame image_item no_link scale-with-grid alignnone no_border">
+                                                        <div class="image_wrapper"><img class="scale-with-grid"
+                                                                                        src="http://test.chubrica.com/wp-content/uploads/2015/09/home_zoo_sep.png"
+                                                                                        alt="home_zoo_sep" title="home_zoo_sep"
+                                                                                        width="59" height="13"/></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="column mcb-column mcb-item-711e48711 one column_divider">
+                                                <hr class="no_line" style="margin:0 auto 30px"/>
+                                            </div>
+                                            <div class="column mcb-column mcb-item-d26c9c88a one column_column">
+                                                <div class="column_attr clearfix" style="">
+                                                    <table class="table_zoo">
+                                                        <tbody>
+
+
+                                                        <tr>
+                                                            <th class="c3"><h1 align="right" style="color: #ffa200;">Малък
+                                                                билет</h1>
+                                                                <p>За лица от 3 до 18 години</p></th>
+                                                            <td class="c5"><h1 style="color: #ffa200;">4 лева</h1></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="c4"><h1 align="right" style="color: #c500a7;">Среден
+                                                                билет</h1>
+                                                                <p>За лица над 18 години</p></th>
+                                                            <td class="c5"><h1 style="color: #c500a7;">7 лева</h1></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="c5"><h1 align="right" style="color: #0374c4;">Голям
+                                                                билет</h1>
+                                                                <p>За лица над 18 години.</p></th>
+                                                            <td class="c5"><h1 style="color: #0374c4;">10 лева</h1></td>
+                                                        </tr>
+                                                        </tbody>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+        </div>
+    </div>
+</div>
+
+<!--<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">-->
+<!--    <h1 class="w3-margin w3-xlarge">Цитат на деня: "На пътя към съвършенството няма стая за отдих." -Брайън Олдис</h1>-->
+<!--</div>-->
+
+<!-- Footer -->
+
+<script>
+
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>

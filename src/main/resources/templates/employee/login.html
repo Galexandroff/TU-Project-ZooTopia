@@ -1,0 +1,27 @@
+<th:block th:include="~{_shared/head-reg}" xmlns:th="http://www.w3.org/1999/xhtml"/>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<div class="login-reg-panel">
+    <div class="login-info-box">
+        <h2>Имате ли акаунт?</h2>
+        <label id="label-register" for="log-reg-show">Вход</label>
+        <input type="radio" name="active-log-panel" id="log-reg-show" checked="checked">
+    </div>
+
+    <div class="white-panel">
+        <div class="login-show">
+            <h2>Вход за служители</h2>
+            <form class="mx-auto w-15" th:action="@{/login-employee}" method="post">
+                <input type="text" name="code" placeholder="Секретен код">
+                <input type="password" name="password" placeholder="Парола">
+                <input type="submit" value="Вход">
+            </form>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" href="/css/style-register-zoo.css">
+<script src="/js/reg.js"></script>
